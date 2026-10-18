@@ -1,0 +1,7 @@
+[Unit]
+Description=Sort job mail with Jev
+
+[Service]
+Type=oneshot
+WorkingDirectory=/tmp
+ExecStart=/usr/bin/python3 -I %h/mailsort/mailsort.py
